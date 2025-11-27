@@ -1,231 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mustafa Yucel – Research Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #1e293b;
-      --accent: #38bdf8;
-      --soft: #94a3b8;
-      --text: #f8fafc;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Inter", sans-serif;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 70px 8%;
-      text-align: left;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      max-width: 700px;
-      color: var(--soft);
-    }
-
-    nav {
-      position: fixed;
-      top: 20px;
-      right: 40px;
-    }
-
-    nav a {
-      margin-left: 20px;
-      color: var(--soft);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    section {
-      padding: 80px 8%;
-    }
-
-    h2 {
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-
-    .card {
-      background: var(--card);
-      padding: 25px;
-      border-radius: 14px;
-      margin-bottom: 25px;
-      border: 1px solid #334155;
-    }
-
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 25px;
-    }
-
-    .project-card {
-      background: var(--card);
-      padding: 20px;
-      border-radius: 15px;
-      transition: transform 0.2s ease;
-    }
-
-    .project-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .tag {
-      display: inline-block;
-      background: rgba(56,189,248,0.15);
-      color: var(--accent);
-      padding: 5px 10px;
-      border-radius: 999px;
-      font-size: 13px;
-      margin-right: 5px;
-    }
-
-    footer {
-      padding: 60px 8%;
-      color: var(--soft);
-    }
-
-    footer a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    @media(max-width:768px) {
-      header h1 {
-        font-size: 2.2rem;
-      }
-      nav {
-        display: none;
-      }
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Mustafa Yucel | Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#research">Research</a>
-  <a href="#projects">Projects</a>
-  <a href="#publications">Publications</a>
-  <a href="#contact">Contact</a>
+  <a href="index.html">Home</a>
+  <a href="research.html">Research</a>
+  <a href="publications.html">Publications</a>
+  <a href="projects.html">Projects</a>
+  <a href="contact.html">Contact</a>
 </nav>
 
 <header>
   <h1>Mustafa Yucel</h1>
-  <p>
-    PhD Student in Photonics & Electromagnetics – EPFL.  
-    Working on <b>metasurfaces</b>, <b>integrated photonics</b>,
-    <b>optical neural hardware</b>, and <b>nano-fabrication</b>.  
-  </p>
+  <p>PhD Student in Photonics & Electromagnetics – EPFL</p>
 </header>
 
-<section id="about">
-  <h2>About</h2>
+<section>
   <div class="card">
     <p>
-      I’m a PhD student at EPFL working on integrated photonics,
-      metasurfaces and optical computing hardware.
-      My background includes research at MIT and CNRS,
-      with strong experience in simulation, nanofabrication
-      and photonic system automation.
+      I focus on integrated photonics, metasurfaces and optical computing hardware.
+      My work bridges theoretical electromagnetism, nanofabrication and scalable photonic systems.
     </p>
-    <p>
-      My goal: bridge fundamental photonics with real-world computing systems.
-    </p>
-  </div>
-</section>
-
-<section id="research">
-  <h2>Research Interests</h2>
-  <div class="card">
-    <span class="tag">Metasurfaces</span>
-    <span class="tag">Integrated Photonics</span>
-    <span class="tag">Optical Neural Networks</span>
-    <span class="tag">Quantum PIC</span>
-    <span class="tag">Nanofabrication</span>
-  </div>
-</section>
-
-<section id="projects">
-  <h2>Selected Projects</h2>
-
-  <div class="projects-grid">
-    <div class="project-card">
-      <h3>Optical Neural Processor</h3>
-      <p>
-        Programmable photonic hardware for vector-matrix multiplication using nanophotonics and PyTorch.
-      </p>
-      <span class="tag">Photonics</span>
-      <span class="tag">AI Hardware</span>
-    </div>
-
-    <div class="project-card">
-      <h3>CMOS Optical Neural Transceivers</h3>
-      <p>
-        Design and simulation of large-scale optical transceivers at MIT.
-      </p>
-      <span class="tag">CMOS</span>
-      <span class="tag">Optical IC</span>
-    </div>
-
-    <div class="project-card">
-      <h3>LOKAI Smart Lock</h3>
-      <p>
-        CNN-based smart door lock on Raspberry Pi with computer vision authentication.
-      </p>
-      <span class="tag">Computer Vision</span>
-      <span class="tag">Edge AI</span>
-    </div>
-  </div>
-</section>
-
-<section id="publications">
-  <h2>Publications</h2>
-
-  <div class="card">
-    <p><b>Angle-Invariant Scattering in Metasurfaces</b><br>
-    Physical Review B, 2025</p>
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact</h2>
-  <div class="card">
-    <p>Email: mustafa.yucel@epfl.ch</p>
-    <p>LinkedIn: <a href="#">linkedin.com/in/mustafa-yucel</a></p>
-    <p>GitHub: <a href="#">github.com/mustafa-yucel-dev</a></p>
   </div>
 </section>
 
 <footer>
-  <p>© 2025 – Mustafa Yucel. Built for research & impact.</p>
+  <p>© 2025 – Mustafa Yucel</p>
 </footer>
 
 </body>
